@@ -1,0 +1,40 @@
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.footer .footer-links {
+  margin-top: 20px;
+}
+
+.footer .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer .footer-links a:hover {
+  color: #007bff;
+}
+
+.footer .social-icons {
+  margin-top: 20px;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #007bff;
+}
