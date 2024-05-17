@@ -27,6 +27,20 @@
   z-index: 1;
 }
 
+.carousel-caption h5 {
+  margin-top: -20rem;
+  font-weight: 700;
+  font-size: 2.7rem;
+  letter-spacing: 0.1rem;
+  color: #fbfeff;
+}
+
+.carousel-caption p {
+  font-weight: bold;
+  color: #d9e2e6;
+  font-size: 1.1rem;
+}
+
 /* Greetings */
 .greeting {
   padding: 60px 0;

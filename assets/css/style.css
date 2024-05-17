@@ -2,13 +2,13 @@
 /* Navbar */
 .navbar .container .navbar-brand {
   font-size: 1.8rem;
-  color: white;
+  color: #cbe2f0;
   font-weight: 900;
   letter-spacing: 0.1rem;
 }
 
 .navbar .container .navbar-brand span {
-  color: #cbe2f0;
+  color: white;
 }
 
 .navbar-nav .nav-item .nav-link {
