@@ -43,40 +43,55 @@
 
 /* Greetings */
 .greeting {
-  padding: 60px 0;
-  background-color: #f8f9fa;
+  padding: 3.4rem;
+  background: linear-gradient(to right, #ffffff, #f1f9ff);
 }
 
 .greeting-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #333;
+  text-align: start;
+  color: #575757;
 }
 
 .greeting-text {
-  font-size: 1.25rem;
-  color: #555;
+  font-size: 1.2rem;
+  text-align: start;
+  color: #698b91;
 }
 
 .greeting-description {
   font-size: 1rem;
-  color: #777;
-  margin-top: 10px;
+  margin-top: 1rem;
+  text-align: start;
+  color: #434141;
 }
 
-/* .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+.greeting-buttons {
+  text-align: start;
+}
+
+.greeting-buttons .btn {
+  border-radius: 30px;
+  padding: 0.5rem 2rem;
+  text-transform: none;
+  border-color: #8dd3ff;
+  background: linear-gradient(to right, #29aafb, #21ffda) !important;
+  color: #292929;
+}
+
+.greeting-buttons .btn-download-cv:hover {
+  background: linear-gradient(to right, #21ffda, #29aafb) !important;
+}
+
+/* Button Styles */
+.btn-primary, .btn-secondary, .btn-outline-primary {
+  margin-top: 20px;
+  margin-right: 10px;
   padding: 10px 20px;
   font-size: 1rem;
-  border-radius: 25px;
-  text-transform: uppercase;
+  border-radius: 50px;
 }
-
-.btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #004085;
-} */
 
 /* Portfolio */
 .portfolio {
