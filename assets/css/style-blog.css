@@ -1,0 +1,74 @@
+/* CSS for Blogs Page */
+/* Sidebar */
+.sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Blog List */
+.blog-list {
+  margin-left: 20px; /* Adjust spacing between sidebar and blog list */
+}
+
+.blog-item {
+  margin-bottom: 40px;
+}
+
+.blog-item h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blog-meta {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.blog-item p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  .sidebar {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* Hide sidebar on smaller screens */
+  }
+  .blog-list {
+    margin-left: 0; /* Adjust blog list margin on smaller screens */
+  }
+}
