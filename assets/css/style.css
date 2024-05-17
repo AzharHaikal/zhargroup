@@ -1,3 +1,62 @@
+/* CSS for Main Page */
+/* Navbar */
+.navbar .container .navbar-brand {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+
+.navbar .container .navbar-brand span {
+  color: #cbe2f0;
+}
+
+.navbar-nav .nav-item .nav-link {
+  transition: background-color 0.5s, border-color 0.5s, color 0.5s, padding 0.5s;
+  border-radius: 30px;
+  margin-left: 5rem;
+  margin-top: 0.3rem;
+  color: #f3fbff !important;
+  border: 2px solid transparent;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  border: 2px solid #d2eeff;
+  background-color: white;
+  color: #97c9e9 !important;
+  padding: 0.5rem 1.5rem;
+}
+
+.navbar-nav .input-search {
+  display: none;
+  padding: 0.5rem 2rem;
+  border: 1px solid #cbe2f0;
+  background-color: transparent;
+  color: #97c9e9 !important;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.7s, color 0.7s;
+}
+
+.search-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.login-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Footer */
 .footer {
   background-color: #343a40;
   color: #fff;
