@@ -1,0 +1,41 @@
+/* CSS for Projects Page */
+.projects {
+  padding: 60px 0;
+}
+
+.projects .stat-box {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects .stat-box h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.projects .tech-box {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects .tech-box i {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.projects .card {
+  transition: transform 0.3s ease;
+}
+
+.projects .card:hover {
+  transform: translateY(-10px);
+}
