@@ -5,7 +5,7 @@
 }
 
 .category-box {
-  background-color: #f8f9fa;
+  background-color: #fff;
   padding: 20px;
   margin: 10px 0;
   border-radius: 10px;
@@ -23,13 +23,13 @@
 }
 
 .category-icon {
-  font-size: 3rem;
-  color: #007bff;
+  font-size: 1.8rem;
+  color: #65c2fc;
   margin-bottom: 10px;
 }
 
 .category-box h3 {
-  font-size: 1.25rem;
+  font-size: 0.8rem;
   color: #333;
 }
 
@@ -38,38 +38,42 @@
   padding: 60px 0;
 }
 
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
 .portfolio img {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-description {
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 
 .portfolio-description h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .portfolio-description p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #555;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
 .portfolio-description .btn {
-  background-color: #007bff;
+  background-color: #218dff;
   color: #fff;
-  padding: 10px 20px;
+  padding: 5px 15px;
   border-radius: 25px;
-  text-transform: uppercase;
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 0.8rem;
 }
 
 .portfolio-description .btn:hover {
-  background-color: #0056b3;
+  background-color: #007bff;
   color: #fff;
 }
