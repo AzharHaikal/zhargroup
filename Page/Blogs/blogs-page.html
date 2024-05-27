@@ -19,9 +19,9 @@
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">My <span>Website</span></a>
+        <a class="navbar-brand" href="#">Z<span>har</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,7 +31,7 @@
               <a class="nav-link" aria-current="page" href="../Home/home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="blogs-page.html">Blogs</a>
+              <a class="nav-link active" aria-current="page" href="../Blogs/blogs-page.html">Blogs</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="../Portfolio/portfolio-page.html">Portfolio</a>
@@ -49,11 +49,14 @@
           </ul>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <form class="d-flex">
-              <input class="form-control me-2 input-search" type="search" placeholder="Search" aria-label="Search">
-              <button type="submit" class="search-button">
+              <input class="form-control me-2 input-search" type="search" placeholder="Search" aria-label="Search" style="display: none;">
+              <button type="button" class="search-button" onclick="toggleSearchInput()">
                 <i class="fas fa-search"></i>
               </button>
             </form>
+            <button type="button" class="login-button">
+              <i class="fas fa-user"></i>
+            </button>
           </ul>
         </div>
       </div>
@@ -61,63 +64,106 @@
     <!-- Navbar End -->
 
     <!-- Blogs Start -->
-    <div class="container mt-5">
-      <div class="row">
-        <!-- Sidebar with Categories -->
-        <div class="col-lg-3">
-          <div class="sidebar">
-            <h2>Categories</h2>
-            <ul class="list-unstyled">
-              <li><a href="#">Category 1</a></li>
-              <li><a href="#">Category 2</a></li>
-              <li><a href="#">Category 3</a></li>
-              <!-- Add more categories as needed -->
-            </ul>
+    <div class="container">
+      <div class="blog">
+        <div class="row">
+          <!-- Sidebar with Categories -->
+          <div class="col-lg-2">
+            <div class="sidebar">
+              <h2>Categories</h2>
+              <ul class="list-unstyled">
+                <li><a href="#">Category 1</a></li>
+                <li><a href="#">Category 2</a></li>
+                <li><a href="#">Category 3</a></li>
+                <!-- Add more categories as needed -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- Blog List -->
+          <div class="col-lg-10">
+            <div class="blog-list">
+              <!-- Blog Item 1 -->
+              <div class="blog-item">
+                <img src="../../assets/images/home-title-1.jpg" alt="Blog Image 1" class="blog-image">
+                <div class="blog-content">
+                  <h3><a href="#">Title of Blog Post 1</a></h3>
+                  <p class="blog-meta">Posted on January 1, 2024 by John Doe</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris id turpis ut libero varius imperdiet...</p>
+                </div>
+              </div>
+              <!-- Blog Item 2 -->
+              <div class="blog-item">
+                <img src="../../assets/images/home-title-1.jpg" alt="Blog Image 2" class="blog-image">
+                <div class="blog-content">
+                  <h3><a href="#">Title of Blog Post 2</a></h3>
+                  <p class="blog-meta">Posted on February 15, 2024 by Jane Smith</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris id turpis ut libero varius imperdiet...</p>
+                </div>
+              </div>
+              <div class="blog-item">
+                <img src="../../assets/images/home-title-1.jpg" alt="Blog Image 2" class="blog-image">
+                <div class="blog-content">
+                  <h3><a href="#">Title of Blog Post 2</a></h3>
+                  <p class="blog-meta">Posted on February 15, 2024 by Jane Smith</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris id turpis ut libero varius imperdiet...</p>
+                </div>
+              </div>
+              <div class="blog-item">
+                <img src="../../assets/images/home-title-1.jpg" alt="Blog Image 2" class="blog-image">
+                <div class="blog-content">
+                  <h3><a href="#">Title of Blog Post 2</a></h3>
+                  <p class="blog-meta">Posted on February 15, 2024 by Jane Smith</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris id turpis ut libero varius imperdiet...</p>
+                </div>
+              </div>
+              <div class="blog-item">
+                <img src="../../assets/images/home-title-1.jpg" alt="Blog Image 2" class="blog-image">
+                <div class="blog-content">
+                  <h3><a href="#">Title of Blog Post 2</a></h3>
+                  <p class="blog-meta">Posted on February 15, 2024 by Jane Smith</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris id turpis ut libero varius imperdiet...</p>
+                </div>
+              </div>
+              <div class="blog-item">
+                <img src="../../assets/images/home-title-1.jpg" alt="Blog Image 2" class="blog-image">
+                <div class="blog-content">
+                  <h3><a href="#">Title of Blog Post 2</a></h3>
+                  <p class="blog-meta">Posted on February 15, 2024 by Jane Smith</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris id turpis ut libero varius imperdiet...</p>
+                </div>
+              </div>
+              <div class="blog-item">
+                <img src="../../assets/images/home-title-1.jpg" alt="Blog Image 2" class="blog-image">
+                <div class="blog-content">
+                  <h3><a href="#">Title of Blog Post 2</a></h3>
+                  <p class="blog-meta">Posted on February 15, 2024 by Jane Smith</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris id turpis ut libero varius imperdiet...</p>
+                </div>
+              </div>
+              <div class="blog-item">
+                <img src="../../assets/images/home-title-1.jpg" alt="Blog Image 2" class="blog-image">
+                <div class="blog-content">
+                  <h3><a href="#">Title of Blog Post 2</a></h3>
+                  <p class="blog-meta">Posted on February 15, 2024 by Jane Smith</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris id turpis ut libero varius imperdiet...</p>
+                </div>
+              </div>
+              <!-- Repeat for more blog items as needed -->
+            </div>
           </div>
         </div>
-
-        <!-- Blog List -->
-        <div class="col-lg-9">
-          <div class="blog-list">
-            <!-- Blog Item 1 -->
-            <div class="blog-item">
-              <h3><a href="#">Title of Blog Post 1</a></h3>
-              <p class="blog-meta">Posted on January 1, 2024 by John Doe</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris id turpis ut libero varius imperdiet...</p>
-            </div>
-            <!-- Blog Item 2 -->
-            <div class="blog-item">
-              <h3><a href="#">Title of Blog Post 2</a></h3>
-              <p class="blog-meta">Posted on February 15, 2024 by Jane Smith</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris id turpis ut libero varius imperdiet...</p>
-            </div>
-            <div class="blog-item">
-              <h3><a href="#">Title of Blog Post 2</a></h3>
-              <p class="blog-meta">Posted on February 15, 2024 by Jane Smith</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris id turpis ut libero varius imperdiet...</p>
-            </div>
-            <div class="blog-item">
-              <h3><a href="#">Title of Blog Post 2</a></h3>
-              <p class="blog-meta">Posted on February 15, 2024 by Jane Smith</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris id turpis ut libero varius imperdiet...</p>
-            </div>
-            <div class="blog-item">
-              <h3><a href="#">Title of Blog Post 2</a></h3>
-              <p class="blog-meta">Posted on February 15, 2024 by Jane Smith</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris id turpis ut libero varius imperdiet...</p>
-            </div>
-            <div class="blog-item">
-              <h3><a href="#">Title of Blog Post 2</a></h3>
-              <p class="blog-meta">Posted on February 15, 2024 by Jane Smith</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris id turpis ut libero varius imperdiet...</p>
-            </div>
-            <div class="blog-item">
-              <h3><a href="#">Title of Blog Post 2</a></h3>
-              <p class="blog-meta">Posted on February 15, 2024 by Jane Smith</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris id turpis ut libero varius imperdiet...</p>
-            </div>
-            <!-- Add more blog items as needed -->
-          </div>
+        
+        <!-- Pagination -->
+        <div class="pagination-container">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#"><</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <!-- Add more page items as needed -->
+            <li class="page-item"><a class="page-link" href="#">></a></li>
+          </ul>
         </div>
       </div>
     </div>
