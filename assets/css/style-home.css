@@ -23,7 +23,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #0000004d;
   z-index: 1;
 }
 
@@ -44,7 +44,7 @@
 /* Greetings */
 .greeting {
   padding: 3.4rem;
-  background: linear-gradient(to right, #ffffff, #f1f9ff);
+  background: linear-gradient(to bottom, #fff, #f8f9fa);
 }
 
 .greeting-title {
@@ -96,7 +96,7 @@
 /* Portfolio */
 .portfolio {
   padding: 60px 0;
-  background-color: #f8f9fa;
+  background: linear-gradient(to bottom, #f8f9fa, #fff);
 }
 
 .portfolio h2 {
@@ -151,7 +151,7 @@
 /* Contact */
 .contact {
   padding: 60px 0;
-  background-color: #f8f9fa;
+  background: linear-gradient(to bottom, #fff, #f8f9fa);
 }
 
 .contact h2 {
@@ -195,4 +195,69 @@
 .contact .btn-primary:hover {
   background-color: #0056b3;
   border-color: #004085;
+}
+
+/* Media Queries */
+@media (max-width: 450px) {
+  /* Greetings */
+  .greeting {
+    padding: 0.7rem;
+  }
+
+  .greeting-title {
+    font-size: 1.8rem;
+  }
+
+  .greeting-text {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .greeting-description {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  .greeting-buttons {
+    text-align: center;
+  }
+  
+  .greeting-buttons .btn {
+    border-radius: 30px;
+    padding: 0.5rem 1.2rem;
+    text-transform: none;
+    border-color: #8dd3ff;
+    font-size: 0.8rem;
+    background: linear-gradient(to right, #29aafb, #21ffda) !important;
+    color: #292929;
+  }
+  
+  .greeting-buttons .btn-download-cv:hover {
+    background: linear-gradient(to right, #21ffda, #29aafb) !important;
+  }
+
+  /* Portfolio */
+  .portfolio {
+    padding: 20px 0 10px 0;
+  }
+
+  .portfolio h2 {
+    font-size: 1.5rem;
+  }
+  
+  /* Contact */
+  .contact {
+    padding: 20px 0 10px 0;
+  }
+
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact .btn {
+    width: 12rem;
+    font-size: 0.8rem;
+    margin: 0.2rem 0 1rem 0;
+  }
+
 }
